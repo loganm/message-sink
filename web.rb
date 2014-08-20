@@ -1,9 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  puts "success"
+  puts request.body.read.to_s
 end
 
 post '/' do
-  puts request.body
+  puts request.body.read.to_s
 end
